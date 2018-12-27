@@ -1,12 +1,6 @@
 package com.example.pawelm.getfit;
 
-import com.google.firebase.firestore.FirebaseFirestore;
-
-import net.danlew.android.joda.JodaTimeAndroid;
-
-import org.joda.time.DateTime;
 import org.joda.time.LocalDate;
-import org.joda.time.Period;
 import org.joda.time.Years;
 
 import java.util.Date;

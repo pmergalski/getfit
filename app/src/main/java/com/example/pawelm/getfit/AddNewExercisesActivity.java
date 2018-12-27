@@ -1,38 +1,31 @@
 package com.example.pawelm.getfit;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.InputType;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
-import android.widget.LinearLayout;
 import android.widget.TableLayout;
-import android.widget.TableRow;
 import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.button.MaterialButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
-import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class AddNewExercisesActivity extends AppCompatActivity {
 
@@ -79,26 +72,31 @@ public class AddNewExercisesActivity extends AppCompatActivity {
                                 button.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View view) {
-                                        final Date date = (Date) getIntent().getExtras().get("date");
-                                        Map<String, Object> map = new HashMap<>();
-                                        map.put("quantity", Integer.parseInt(quantity.getText().toString()));
-                                        map.put("date", date);
-                                        map.put("exercise", document.getReference());
+                                        String quantityString = (quantity.getText().toString());
+                                        if (!quantityString.isEmpty()) {
+                                            Integer quantityInt = Integer.parseInt(quantityString);
+                                            final Date date = (Date) getIntent().getExtras().get("date");
+                                            Map<String, Object> map = new HashMap<>();
+                                            map.put("quantity", quantityInt);
+                                            map.put("date", date);
+                                            map.put("exercise", document.getReference());
 
-                                        firestore.collection("Users")
-                                                .document(user.getUid())
-                                                .collection("Workouts")
-                                                .document().set(map).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                            @Override
-                                            public void onComplete(@NonNull Task<Void> task) {
-                                                if (task.isSuccessful()) {
-                                                    Intent intent = new Intent(AddNewExercisesActivity.this, MainActivity.class);
-                                                    intent.putExtra("date", date);
-                                                    startActivity(intent);
-                                                    finish();
+                                            firestore.collection("Users")
+                                                    .document(user.getUid())
+                                                    .collection("Workouts")
+                                                    .document().set(map).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                @Override
+                                                public void onComplete(@NonNull Task<Void> task) {
+                                                    if (task.isSuccessful()) {
+                                                        Intent intent = new Intent(AddNewExercisesActivity.this, MainActivity.class);
+                                                        intent.putExtra("date", date);
+                                                        startActivity(intent);
+                                                        finish();
+                                                    }
                                                 }
-                                            }
-                                        });
+                                            });
+                                        } else
+                                            quantity.setError(getResources().getString(R.string.can_not_be_empty));
                                     }
                                 });
                                 table.addView(v);

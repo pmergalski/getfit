@@ -1,10 +1,5 @@
 package com.example.pawelm.getfit;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.DialogFragment;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -20,11 +15,13 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import org.joda.time.LocalDate;
-import org.joda.time.Years;
 
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
 
 public class SetupActivity extends AppCompatActivity {
 
