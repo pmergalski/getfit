@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_log_out"
+        android:orderInCategory="100"
+        android:title="@string/log_out"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/edit_data"
+        android:orderInCategory="100"
+        android:title="@string/edit_data"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/add_product"
+        android:orderInCategory="100"
+        android:title="@string/add_product"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/add_exercise"
+        android:orderInCategory="100"
+        android:title="@string/add_exercise"
+        app:showAsAction="never" />
+
+
+</menu>

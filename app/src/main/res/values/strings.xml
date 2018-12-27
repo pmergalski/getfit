@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">GetFit</string>
+
+    <string-array name="genders">
+        <item>Mężczyzna</item>
+        <item>Kobieta</item>
+    </string-array>
+
+    <string-array name="goals">
+        <item>Chcę schudnąć</item>
+        <item>Chcę utrzymaćwagę</item>
+        <item>Chcę przytyć</item>
+    </string-array>
+
+    <string-array name="activity">
+        <item>Niska</item>
+        <item>Średnia</item>
+        <item>Wysoka</item>
+        <item>Bardzo wysoka</item>
+    </string-array>
+
+    <string name="new_acc_text">Utwórz nowe konto</string>
+    <string name="login_btn_text">Zaloguj</string>
+    <string name="password_hint">Password</string>
+    <string name="e_mail_hint">E-mail</string>
+    <string name="left_arrow"><![CDATA[<]]></string>
+    <string name="right_arrow"><![CDATA[>]]></string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="breakfast">Śniadanie</string>
+    <string name="second_breakfast">Drugie Śniadanie</string>
+    <string name="add">+</string>
+    <string name="lunch">Obiad</string>
+    <string name="supper">kolacja</string>
+    <string name="workout">Ćwiczenia</string>
+    <string name="remaining_calories">Pozostałe kalorie:</string>
+    <string name="add_new_products">Dodaj nowe produkty</string>
+    <string name="add_new_exerises">Dodaj nowe ćwiczenia</string>
+    <string name="search">Szukaj</string>
+    <string name="current_weight">Aktualna waga:</string>
+    <string name="add_text">Dodaj</string>
+    <string name="kilos">kg</string>
+    <string name="quantity">ilość</string>
+    <string name="log_out">Wyloguj</string>
+    <string name="edit_data">Edytuj dane konta</string>
+    <string name="add_product">Dodaj nowy produkt</string>
+    <string name="add_exercise">Dodaj nowe ćwiczenie</string>
+    <string name="exercise_name">Nazwa Ćwiczenia</string>
+    <string name="burned_calories_text">spalane kalorie</string>
+    <string name="add_new_exercise">Dodaj nowe ćwiczenie</string>
+    <string name="add_new">Dodaj</string>
+    <string name="name">nazwa</string>
+    <string name="can_not_be_empty">nie może być puste</string>
+
+</resources>

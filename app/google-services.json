@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "619394588423",
+    "firebase_url": "https://getfit-bf867.firebaseio.com",
+    "project_id": "getfit-bf867",
+    "storage_bucket": "getfit-bf867.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619394588423:android:a127c0e0edb1c388",
+        "android_client_info": {
+          "package_name": "com.example.pawelm.getfit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619394588423-2l4kas4eijhuc184b36tn7cfotun1lt4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pawelm.getfit",
+            "certificate_hash": "ef7ab7e23df304e1991b69c61409b9bb73b0ba5b"
+          }
+        },
+        {
+          "client_id": "619394588423-sth0fe0lj6qg4hgtlqld9vmruu8fvdv2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKQxHdNtIrfhHX3i3zPwfQoTLjEefLZcY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619394588423-sth0fe0lj6qg4hgtlqld9vmruu8fvdv2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
