@@ -76,7 +76,7 @@ public class DetailsActivity extends AppCompatActivity {
                                             LayoutInflater mInflater = (LayoutInflater) getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
                                             final View v = mInflater.inflate(R.layout.details_table_row, null);
                                             TextView textView = v.findViewById(R.id.table_row_text_view);
-
+                                            textView.setSelected(true);
                                             textView.setText(name + ", " + quantity + ", spalone " + burnedCalories * quantity + " kcal");
                                             Button button = v.findViewById(R.id.table_row_delete_button);
                                             button.setText("-");
@@ -121,6 +121,7 @@ public class DetailsActivity extends AppCompatActivity {
                                             LayoutInflater mInflater = (LayoutInflater) getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
                                             final View v = mInflater.inflate(R.layout.details_table_row, null);
                                             TextView textView = v.findViewById(R.id.table_row_text_view);
+                                            textView.setSelected(true);
 
                                             textView.setText(name + " x" + quantity + ",  " + calories * quantity + " kcal");
                                             Button button = v.findViewById(R.id.table_row_delete_button);

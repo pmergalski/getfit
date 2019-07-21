@@ -8,8 +8,6 @@ import android.widget.EditText;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.button.MaterialButton;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
@@ -21,12 +19,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class AddExerciseActivity extends AppCompatActivity {
 
-    EditText calories;
-    EditText exercise_name;
-    MaterialButton add_button;
-    FirebaseAuth sAuth;
-    FirebaseFirestore firestore;
-    FirebaseUser user;
+    private EditText calories;
+    private EditText exercise_name;
+    private MaterialButton add_button;
+    private FirebaseFirestore firestore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +32,6 @@ public class AddExerciseActivity extends AppCompatActivity {
         calories = findViewById(R.id.calories_edit);
         exercise_name = findViewById(R.id.name_edit);
         add_button = findViewById(R.id.add_new_exercise_btn);
-        sAuth = FirebaseAuth.getInstance();
-        user = sAuth.getCurrentUser();
         firestore = FirebaseFirestore.getInstance();
 
         add_button.setOnClickListener(new View.OnClickListener() {

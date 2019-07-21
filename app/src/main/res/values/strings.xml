@@ -45,10 +45,13 @@
     <string name="add_product">Dodaj nowy produkt</string>
     <string name="add_exercise">Dodaj nowe ćwiczenie</string>
     <string name="exercise_name">Nazwa Ćwiczenia</string>
-    <string name="burned_calories_text">spalane kalorie</string>
+    <string name="burned_calories_text">Spalane kalorie</string>
     <string name="add_new_exercise">Dodaj nowe ćwiczenie</string>
     <string name="add_new">Dodaj</string>
     <string name="name">nazwa</string>
     <string name="can_not_be_empty">nie może być puste</string>
+    <string name="kcal">kcal</string>
+    <string name="product_name">Nazwa produktu</string>
+    <string name="product_calories">Kalorie</string>
 
 </resources>

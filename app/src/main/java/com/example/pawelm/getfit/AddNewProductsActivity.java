@@ -74,6 +74,7 @@ public class AddNewProductsActivity extends AppCompatActivity {
                                 View v = mInflater.inflate(R.layout.table_row, null);
                                 TextView textView = v.findViewById(R.id.table_row_view);
                                 textView.setText(document.get("name").toString() + ", " + document.get("calories") + " kalorii");
+                                textView.setSelected(true);
                                 final EditText quantity = v.findViewById(R.id.table_row_edit);
                                 Button button = v.findViewById(R.id.table_row_button);
                                 button.setText(R.string.add);

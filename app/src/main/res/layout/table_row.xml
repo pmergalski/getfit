@@ -8,6 +8,10 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:id="@+id/table_row_view"
+        android:ellipsize="marquee"
+        android:gravity="start"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
         android:padding="8dp" />
 
     <EditText
